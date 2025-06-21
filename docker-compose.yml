@@ -88,12 +88,12 @@ volumes:
   netbox-media-files:
     driver_opts:
       type: nfs
-      o: "addr=192.168.0.37,hard,rsize=1048576,wsize=1048576,nfsvers=4"
+      o: "addr=192.168.0.12,hard,rsize=1048576,wsize=1048576,nfsvers=4"
       device: ":/mnt/share.pool.nas2.anl/nfs/netbox/netbox-media-files"
   netbox-postgres-data:
     driver_opts:
       type: nfs
-      o: "addr=192.168.0.37,hard,rsize=1048576,wsize=1048576,nfsvers=4"
+      o: "addr=192.168.0.12,hard,rsize=1048576,wsize=1048576,nfsvers=4"
       device: ":/mnt/share.pool.nas2.anl/nfs/netbox/netbox-postgres-data"
   netbox-redis-cache-data:
     driver: local
@@ -102,10 +102,10 @@ volumes:
   netbox-reports-files:
     driver_opts:
       type: nfs
-      o: "addr=192.168.0.37,hard,rsize=1048576,wsize=1048576,nfsvers=4"
+      o: "addr=192.168.0.12,hard,rsize=1048576,wsize=1048576,nfsvers=4"
       device: ":/mnt/share.pool.nas2.anl/nfs/netbox/netbox-reports-files"
   netbox-scripts-files:
     driver_opts:
       type: nfs
-      o: "addr=192.168.0.37,hard,rsize=1048576,wsize=1048576,nfsvers=4"
+      o: "addr=192.168.0.12,hard,rsize=1048576,wsize=1048576,nfsvers=4"
       device: ":/mnt/share.pool.nas2.anl/nfs/netbox/netbox-scripts-files"
